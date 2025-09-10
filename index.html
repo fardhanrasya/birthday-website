@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Rasyad! 🎂</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Password Gate Page -->
+    <div id="password-page" class="page active">
+      <div class="stars"></div>
+      <div class="password-container">
+        <h1 class="glow-text">Rasyad, masukkan password rahasiamu 🎁</h1>
+        <div class="input-container">
+          <input
+            type="password"
+            id="password-input"
+            placeholder="Password rahasia..."
+            autocomplete="off"
+          />
+          <button id="enter-btn" class="neon-btn">Masuk</button>
+        </div>
+        <div id="error-message" class="error-hidden">Coba lagi ya 😉</div>
+      </div>
+    </div>
+
+    <!-- Main Birthday Page -->
+    <div id="birthday-page" class="page">
+      <div class="stars"></div>
+
+      <!-- Background Music -->
+      <audio id="background-music" loop>
+        <source src="hbd.mp3" type="audio/mpeg" />
+      </audio>
+
+      <!-- Main Content -->
+      <div class="birthday-container">
+        <!-- Header -->
+        <header class="birthday-header">
+          <h1 class="main-title glow-text">Happy Birthday, Rasyad!</h1>
+        </header>
+
+        <!-- Birthday Cake Section -->
+        <section class="cake-section">
+          <div class="cake-container">
+            <div class="cake">
+              <div class="cake-base"></div>
+              <div class="cake-layer-1"></div>
+              <div class="cake-layer-2"></div>
+              <div class="candles">
+                <div class="candle" data-candle="1">
+                  <div class="flame"></div>
+                  <div class="wick"></div>
+                </div>
+                <div class="candle" data-candle="2">
+                  <div class="flame"></div>
+                  <div class="wick"></div>
+                </div>
+                <div class="candle" data-candle="3">
+                  <div class="flame"></div>
+                  <div class="wick"></div>
+                </div>
+                <div class="candle" data-candle="4">
+                  <div class="flame"></div>
+                  <div class="wick"></div>
+                </div>
+                <div class="candle" data-candle="5">
+                  <div class="flame"></div>
+                  <div class="wick"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Poem Section -->
+        <section class="poem-section">
+          <div class="poem-container">
+            <h2 class="section-title">Untuk Rasyad temanku</h2>
+            <div class="poem-text">
+              <div class="poem-line" data-line="1">
+                Di hari yang spesial ini,
+              </div>
+              <div class="poem-line" data-line="2">
+                Kuucapkan doa terbaik untukmu,
+              </div>
+              <div class="poem-line" data-line="3">
+                Semoga kebahagiaan selalu menyertai,
+              </div>
+              <div class="poem-line" data-line="4">
+                Dan mimpi-mimpimu menjadi kenyataan.
+              </div>
+              <div class="poem-line" data-line="5">Rasyad, kamu istimewa,</div>
+              <div class="poem-line" data-line="6">
+                Dan hari ini adalah harimu!
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="gallery-section">
+          <h2 class="section-title">Galeri Kenangan</h2>
+          <div class="gallery-container">
+            <div class="photo polaroid">
+              <img src="pic1.jpg" alt="Memory 1" class="photo-image">
+            </div>
+            <div class="photo polaroid">
+              <img src="pic2.jpeg" alt="Memory 2" class="photo-image">
+            </div>
+            <div class="photo polaroid">
+              <img src="pic3.jpg" alt="Memory 3" class="photo-image">
+            </div>
+            <div class="photo polaroid">
+              <img src="pic4.jpg" alt="Memory 4" class="photo-image">
+            </div>
+            <div class="photo polaroid">
+              <img src="pic5.jpg" alt="Memory 5" class="photo-image">
+            </div>
+            <div class="photo polaroid">
+              <img src="pic6.jpg" alt="Memory 6" class="photo-image">
+            </div>
+          </div>
+        </section>
+
+        <!-- Closing Message -->
+        <section class="closing-section">
+          <div class="closing-container">
+            <h2 class="closing-message glow-text">
+              Semoga tahunmu penuh kebahagiaan, Rasyad 🎂✨
+            </h2>
+            <div class="sparkles">
+              <div class="sparkle"></div>
+              <div class="sparkle"></div>
+              <div class="sparkle"></div>
+              <div class="sparkle"></div>
+              <div class="sparkle"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Confetti and Balloons for Transition -->
+    <div id="confetti-container"></div>
+    <div id="balloons-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
